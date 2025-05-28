@@ -1,0 +1,96 @@
+:root {
+    --primary: #7b2cbf;
+    --primary-light: #9d4edd;
+    --background: #f8f8fc;
+    --text: #333;
+    --completed: #999;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 60px;
+    margin: 0;
+  }
+  
+  .todo-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(123, 44, 191, 0.1);
+    border: 1px solid #e0e0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 14px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 15px
+
+  }
+  
+  button:hover {
+    background: var(--primary-light);
+  }
+  
+  ul#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 12px;
+  }
+  
+  li:hover {
+    background: #f2ecfa;
+  }
+  
+  li span {
+    flex: 1;
+    cursor: pointer;
+    word-break: break-word; 
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: var(--completed);
+  }
